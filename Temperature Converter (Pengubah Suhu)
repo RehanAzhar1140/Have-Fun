@@ -1,0 +1,83 @@
+print('Temperature Converter')
+
+print('1. Celcius')
+print('2. Reamur')
+print('3. Fahrenheit')
+print('4. Kelvin')
+suhu_awal = (input('Pilih suhu = '))
+if suhu_awal == '1' :#celcius
+    print('1. Reamur')
+    print('2. Fahrenheit')
+    print('3. Kelvin')
+    suhu_tujuan = input('Pilih Suhu Tujuan = ')
+    if suhu_tujuan =='1':#celcius ke reamur
+        suhucelcius = float(input('Masukkan Suhu Celcius = '))
+        suhucelciusreamur = (4 / 5) * suhucelcius
+        print('Suhu Reamur = ',suhucelciusreamur,' R')
+    elif suhu_tujuan =='2':#celcius ke fahrenheit
+        suhucelcius = float(input('Masukkan Suhu Celcius = '))
+        suhucelciusfahrenheit = (9/5) * suhucelcius + 32
+        print('Suhu Fahrenheit = ', suhucelciusfahrenheit,' F')
+    elif suhu_tujuan =='3':#celcius ke kelvin
+        suhucelcius = float(input('Masukkan Suhu Celcius = '))
+        suhucelciuskelvin = suhucelcius + 273.15
+        print('Suhu Kelvin = ', suhucelciuskelvin, ' K')
+    else :
+        print('Gk ada pilihannya woi')
+elif suhu_awal == '2': #Reamur
+    print('1. Celcius')
+    print('2. Fahrenheit')
+    print('3. Kelvin')
+    suhu_tujuan = input('Pilih Suhu Tujuan = ')
+    if suhu_tujuan =='1':#reamur ke celcius
+        suhureamur = float(input('Masukkan Suhu Reamur = '))
+        suhureamurcelcius = (5/4) * suhureamur
+        print('Suhu Celcius = ',suhucelciusreamur,' C')
+    elif suhu_tujuan =='2':#Reamur ke fahrenheit
+        suhureamur = float(input('Masukkan Suhu Reamur = '))
+        suhureamurfahrenheit = (9/4) * suhureamur + 32
+        print('Suhu Fahrenheit = ', suhureamurfahrenheit,' F')
+    elif suhu_tujuan =='3':#reamur ke kelvin
+        suhureamur = float(input('Masukkan Suhu Reamur = '))
+        suhureamurkelvin = (5/4)*suhureamur + 273.15
+        print('Suhu Kelvin = ', suhureamurkelvin, ' K')
+    else :
+        print('Gk ada pilihannya woi') 
+elif suhu_awal == '3': #Fahreheit
+    print('1. Celcius')
+    print('2. Reamur')
+    print('3. Kelvin')
+    suhu_tujuan = input('Pilih Suhu Tujuan = ')
+    if suhu_tujuan =='1':#fahrenheit ke celcius
+        suhufahrenheit = float(input('Masukkan Suhu fahrenheit = '))
+        suhufahrenheitcelcius = (5 / 9) * (suhufahrenheit - 32)
+        print('Suhu Celcius = ',suhucelciusreamur,' C')
+    elif suhu_tujuan =='2':#Fahrenheit ke Reamur
+        suhufahrenheit = float(input('Masukkan Suhu fahrenheit = '))
+        suhufahrenheitreamur = (4/9) * (suhufahrenheit - 32)
+        print('Suhu Reamur = ', suhureamurfahrenheit,' F')
+    elif suhu_tujuan =='3':#Fahrenheit ke Kelvin
+        suhufahrenheit = float(input('Masukkan Suhu fahrenheit = '))
+        suhufahrenheitkelvin = (5/9)(suhufahrenheit - 32) + 273.15
+        print('Suhu Kelvin = ', suhureamurkelvin, ' K')
+    else :
+        print('Gk ada pilihannya woi') 
+elif suhu_awal == '4': #Kelvin
+    print('1. Celcius')
+    print('2. Reamur')
+    print('3. fahrenheit')
+    suhu_tujuan = input('Pilih Suhu Tujuan = ')
+    if suhu_tujuan =='1':#Kelvin ke celcius
+        suhuKelvin = float(input('Masukkan Suhu Kelvin = '))
+        suhuKelvincelcius = (suhuKelvin - 273.15)
+        print('Suhu Celcius = ',suhuKelvincelcius,' C')
+    elif suhu_tujuan =='2':#Kelvin ke Reamur
+        suhuKelvin = float(input('Masukkan Suhu Kelvin = '))
+        suhuKelvinreamur = (4/5) * (suhuKelvin - 273.15)
+        print('Suhu Reamur = ', suhuKelvinreamur,' F')
+    elif suhu_tujuan =='3':#Kelvin ke Fahrenheit
+        suhuKelvin = float(input('Masukkan Suhu Kelvin = '))
+        suhuKelvinFahrenheit = (9/5)*(suhuKelvin - 273.15) + 32
+        print('Suhu Fahrenheit = ', suhuKelvinFahrenheit, ' F')
+    else :
+        print('Gk ada pilihannya woi') 
