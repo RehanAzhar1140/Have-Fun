@@ -1,0 +1,32 @@
+print('\n MALL XYZ')
+print('='* 10)
+print('\n Pilihlah Jenis Kendaraan Anda = ')
+
+JenisKendaraan = input('\nJenis kendaraan anda : \n Kendaraan roda = ')
+if JenisKendaraan == '2':
+    Waktuparkir = int(input('Waktu parkir (jam) = '))
+    Tarifparkir_perjam = 2000
+    if Waktuparkir <= 24 :
+        Totalbayar = Tarifparkir_perjam * Waktuparkir
+        print('Total : Rp.',Totalbayar)
+    elif Waktuparkir > 24 :
+        Denda = 10000*(Waktuparkir//24)
+        Totaltarifparkir = Tarifparkir_perjam*Waktuparkir + 10000 * (Waktuparkir// 24)
+        print('Jika parkir lebih dari 1 hari,anda akan dikenalkan denda yaitu Rp 10.000/hari')
+        print('Denda = Rp.',Denda )
+        print('Total : Rp.',Totaltarifparkir)
+elif JenisKendaraan == '4':
+    Waktuparkir = int(input('Waktu parkir (jam) = '))
+    Tarifparkir_perjam = 4000
+    if Waktuparkir <= 24 :
+        Totalbayar = Tarifparkir_perjam * Waktuparkir
+        print('Total : Rp.',Totalbayar)
+    elif Waktuparkir > 24 :
+        Denda = 10000*(Waktuparkir//24)
+        Totaltarifparkir = Tarifparkir_perjam*Waktuparkir + 10000 * (Waktuparkir// 24)
+        print('Jika parkir lebih dari 1 hari,anda akan dikenalkan denda yaitu Rp 10.000/hari')
+        print('Denda = Rp.',Denda )
+        print('Total : Rp.',Totaltarifparkir)
+else:
+    print('Parkir aja diluar sono')
+print('Selamat Jalan, Terima Kasih')
