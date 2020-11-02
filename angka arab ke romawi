@@ -1,0 +1,15 @@
+InputAngka = int(input('Masukkan Angka diantara 1-10 = '))
+i = "I"
+v = "V"
+x = "X"
+Ketikalebihdari5 = InputAngka % 5 
+if InputAngka < 4 and InputAngka > 0 :
+    print(i * InputAngka)
+elif InputAngka == 4:
+    print(i + v)
+elif InputAngka < 9 and InputAngka > 4:
+    print(v + (i*Ketikalebihdari5))
+elif InputAngka == 9:
+    print(i + x)
+elif InputAngka == 10 :
+    print(x)
